@@ -11,31 +11,43 @@ body{
     box-shadow: inset 0 1px 100px black;
     direction: rtl;
 }
-form,.container{
+form,.container,.card,.card-body{
     display: grid;
     place-items: center;   
 }
 .container{
     height: 100vh;
-}
-.form-control .form-inline{
-    width: 500px;
-    height: 3rem;
+    width: 100vw;
+    position: relative;
 }
 .card{
+    position: relative;
     display: grid;
     place-items: center;
     background-color: transparent;
     background: rgba(0, 0, 0, 0.239);
     width: 100%;
     height: 50%;
+} 
+.form-control .form-inline{
+    width: 500px;
+    height: 3rem;
+}
+
+p{
+    text-align: center;
+    font-weight: 100;
+    color: wheat;
+    text-shadow: 0 -1px 3px black;
 }
 button{
     margin-top: .5rem;
 }
 .form-control-style{
-    display: flex;
-    width: 600px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    width: 100%;
     height: 4rem;
     border: none;
     border-radius: 7px;
@@ -61,12 +73,12 @@ button{
   }  
   @media only screen and (max-width: 770px) {
       .card{
-        height: 80%;
-
+          width: 80%;
+          height: 80%;
       }
     .form-control-style{
         display: flex;
-        width: 400px;
+        width: 100%;
         height: 5rem;
         font-size: 1rem;
 
@@ -76,8 +88,11 @@ button{
 @media only screen and (max-width: 500px) {
     .form-control-style{
         display: flex;
-        width: 200px;
+        width: 100%;
         font-size: .8rem;
-
+    }
+    .card{
+        width: 80%;
+        height: 80%;
     }
 }
