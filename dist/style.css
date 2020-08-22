@@ -1,0 +1,83 @@
+body{
+    background-image: url('https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    place-items: center;
+    max-height: 100%; 
+    box-shadow: inset 0 1px 100px black;
+    direction: rtl;
+}
+form,.container{
+    display: grid;
+    place-items: center;   
+}
+.container{
+    height: 100vh;
+}
+.form-control .form-inline{
+    width: 500px;
+    height: 3rem;
+}
+.card{
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    background: rgba(0, 0, 0, 0.239);
+    width: 100%;
+    height: 50%;
+}
+.h5{
+    text-align: center;
+    font-size: calc(2rem + 5vmin);
+}
+button{
+    margin-top: .5rem;
+}
+.form-control-style{
+    display: flex;
+    width: 600px;
+    height: 4rem;
+    border: none;
+    border-radius: 7px;
+    padding-right: .5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid wheat;
+    text-align: center;
+}
+.form-control-style:hover{
+    background-color: white;
+    color: black;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  ::placeholder:hover {
+    color: black;
+    opacity: 1; /* Firefox */
+  }  
+  @media only screen and (max-width: 770px) {
+      .card{
+        height: 80%;
+
+      }
+    .form-control-style{
+        display: flex;
+        width: 400px;
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .form-control-style{
+        display: flex;
+        width: 200px;
+    }
+}
